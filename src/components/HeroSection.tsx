@@ -19,13 +19,11 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
           <div className="order-2 lg:order-1 text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-soft-green text-primary text-sm font-medium mb-6 animate-fade-up">
-              
-            </div>
+           
 
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6 animate-fade-up stagger-1">
-              Life Hair Transplant
-              <span className="block text-primary">Advanced FUE & DHI Methods</span>
+              
+              <span className="block text-foreground">Advanced <span className="text-primary">FUE & DHI</span>Methods</span>
             </h1>
 
             <div className="flex flex-wrap gap-3 justify-center lg:justify-start mb-8 animate-fade-up stagger-2">

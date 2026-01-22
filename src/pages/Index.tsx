@@ -21,7 +21,7 @@ const Index = () => {
         <HeroSection />
         <VideoCarousel />
         <AboutSection />
-        <DoctorSection />
+        {/* <DoctorSection /> */}
         <WhoIsItForSection />
         <ProgramApproach />
         <WhyItWorks />
