@@ -1,6 +1,8 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
+import VideoCarousel from "@/components/VideoCarousel";
 import AboutSection from "@/components/AboutSection";
+import DoctorSection from "@/components/DoctorSection";
 import WhoIsItForSection from "@/components/WhoIsItForSection";
 import ProgramApproach from "@/components/ProgramApproach";
 import WhyItWorks from "@/components/WhyItWorks";
@@ -17,7 +19,9 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
+        <VideoCarousel />
         <AboutSection />
+        <DoctorSection />
         <WhoIsItForSection />
         <ProgramApproach />
         <WhyItWorks />

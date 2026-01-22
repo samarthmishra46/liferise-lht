@@ -17,11 +17,11 @@ const DigitalDelivery = () => {
               Convenience First
             </span>
             
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
               Centralized OT Setup – Medical-Grade Safety
             </h2>
             
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-white max-w-2xl mx-auto">
               All procedures are performed in controlled medical environments with the highest safety standards.
             </p>
           </div>
