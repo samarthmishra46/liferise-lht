@@ -1,0 +1,383 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Neulis Cursive Font Family */
+@font-face {
+  font-family: 'Neulis Cursive';
+  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Hairline.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neulis Cursive';
+  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Hairline_Italic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Neulis Cursive';
+  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Thin.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neulis Cursive';
+  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Thin_Italic.otf') format('opentype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Neulis Cursive';
+  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Extra_Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neulis Cursive';
+  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Extra_Light_Italic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Neulis Cursive';
+  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Light.otf') format('opentype');
+  font-weight: 350;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neulis Cursive';
+  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Light_Italic.otf') format('opentype');
+  font-weight: 350;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Neulis Cursive';
+  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neulis Cursive';
+  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Neulis Cursive';
+  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neulis Cursive';
+  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Medium_Italic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Neulis Cursive';
+  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Semi_Bold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neulis Cursive';
+  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Semi_Bold_Italic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Neulis Cursive';
+  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neulis Cursive';
+  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Bold_Italic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Neulis Cursive';
+  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Extra_Bold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neulis Cursive';
+  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Extra_Bold_Italic.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Neulis Cursive';
+  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neulis Cursive';
+  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Black_Italic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@layer base {
+  :root {
+    --background: 140 100% 98%;
+    --foreground: 150 100% 4%;
+
+    --card: 140 40% 97%;
+    --card-foreground: 150 100% 4%;
+
+    --popover: 140 100% 98%;
+    --popover-foreground: 150 100% 4%;
+
+    --primary: 86 100% 50%;
+    --primary-foreground: 150 100% 4%;
+
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 140 100% 96%;
+
+    --muted: 140 20% 94%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 86 100% 50%;
+    --accent-foreground: 150 100% 4%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 140 20% 88%;
+    --input: 140 20% 88%;
+    --ring: 86 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens - LHT Theme */
+    --sage: 86 100% 50%;
+    --sage-light: 140 100% 93%;
+    --sage-dark: 140 60% 90%;
+    --cream: 140 100% 93%;
+    --coral: 86 100% 50%;
+    --coral-dark: 86 100% 40%;
+    --warm-gray: 0 0% 35%;
+    --soft-green: 140 100% 93%;
+
+    /* Gradients - LHT Theme */
+    --gradient-hero: linear-gradient(135deg, hsl(140 100% 93%) 0%, hsl(140 100% 96%) 50%, hsl(140 60% 95%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(86 100% 50%) 0%, hsl(86 100% 45%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(86 100% 50%) 0%, hsl(86 100% 42%) 100%);
+    --gradient-soft: linear-gradient(180deg, hsl(140 100% 98%) 0%, hsl(140 100% 93%) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px -2px hsl(150 100% 4% / 0.08);
+    --shadow-md: 0 8px 24px -8px hsl(150 100% 4% / 0.12);
+    --shadow-lg: 0 16px 48px -16px hsl(150 100% 4% / 0.15);
+    --shadow-glow: 0 0 40px hsl(86 100% 50% / 0.25);
+
+    --sidebar-background: 140 100% 98%;
+    --sidebar-foreground: 150 100% 4%;
+    --sidebar-primary: 86 100% 50%;
+    --sidebar-primary-foreground: 150 100% 4%;
+    --sidebar-accent: 140 100% 93%;
+    --sidebar-accent-foreground: 150 100% 4%;
+    --sidebar-border: 140 20% 88%;
+    --sidebar-ring: 86 100% 50%;
+  }
+
+  .dark {
+    --background: 150 100% 4%;
+    --foreground: 140 100% 93%;
+
+    --card: 150 80% 8%;
+    --card-foreground: 140 100% 93%;
+
+    --popover: 150 100% 4%;
+    --popover-foreground: 140 100% 93%;
+
+    --primary: 86 100% 50%;
+    --primary-foreground: 150 100% 4%;
+
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 140 100% 93%;
+
+    --muted: 150 40% 15%;
+    --muted-foreground: 140 30% 70%;
+
+    --accent: 86 100% 50%;
+    --accent-foreground: 150 100% 4%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 150 40% 18%;
+    --input: 150 40% 18%;
+    --ring: 86 100% 50%;
+
+    --sage: 86 100% 50%;
+    --sage-light: 150 40% 15%;
+    --sage-dark: 86 100% 50%;
+    --cream: 150 40% 12%;
+    --coral: 86 100% 50%;
+    --coral-dark: 86 100% 40%;
+    --warm-gray: 0 0% 55%;
+    --soft-green: 150 60% 15%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(150 100% 4%) 0%, hsl(150 80% 6%) 50%, hsl(150 100% 4%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(86 100% 50%) 0%, hsl(86 100% 45%) 100%);
+
+    --sidebar-background: 150 100% 4%;
+    --sidebar-foreground: 140 100% 93%;
+    --sidebar-primary: 86 100% 50%;
+    --sidebar-primary-foreground: 150 100% 4%;
+    --sidebar-accent: 150 40% 15%;
+    --sidebar-accent-foreground: 140 100% 93%;
+    --sidebar-border: 150 40% 18%;
+    --sidebar-ring: 86 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Neulis Cursive', 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Neulis Cursive', 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .text-gradient-primary {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--sage)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .bg-soft-gradient {
+    background: var(--gradient-soft);
+  }
+
+  .card-elevated {
+    @apply bg-card rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300;
+    box-shadow: var(--shadow-md);
+  }
+
+  .card-elevated:hover {
+    box-shadow: var(--shadow-lg);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-full transition-all duration-300;
+    background: var(--gradient-accent);
+    color: hsl(var(--accent-foreground));
+    box-shadow: var(--shadow-md);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-full border-2 transition-all duration-300;
+    border-color: hsl(var(--primary));
+    color: hsl(var(--primary));
+  }
+
+  .btn-secondary:hover {
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+}
