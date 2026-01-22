@@ -5,7 +5,7 @@ const Header = () => {
         <div className="flex items-center justify-center h-20 px-4 sm:px-6 lg:px-8">
           {/* Logo - Centered */}
           <a href="#" className="flex items-center gap-2">
-            <img src="https://res.cloudinary.com/dix4pzu0k/image/upload/v1769059744/Screenshot_from_2026-01-22_10-55-06_nruf6x.png" alt="LHT Logo" className="h-20 w-auto object-contain" />
+            <img src="https://res.cloudinary.com/dix4pzu0k/image/upload/v1769061924/Screenshot_from_2026-01-22_10-55-06_nruf6x.png" alt="LHT Logo" className="h-48 w-auto object-contain" />
           </a>
         </div>
       </div>

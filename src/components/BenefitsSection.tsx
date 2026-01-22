@@ -1,4 +1,4 @@
-import { TrendingDown, Flame, Apple, Zap, Cookie, Leaf } from "lucide-react";
+import { TrendingDown, Flame, Apple, Zap, Leaf } from "lucide-react";
 
 const BenefitsSection = () => {
   const benefits = [
@@ -21,11 +21,6 @@ const BenefitsSection = () => {
       icon: <Zap size={32} />,
       title: "Faster Recovery",
       description: "Minimally invasive FUE method ensures faster healing and minimal scarring.",
-    },
-    {
-      icon: <Cookie size={32} />,
-      title: "Sustainable Results",
-      description: "Long-term hair regrowth support and maintenance programs included.",
     },
     {
       icon: <Leaf size={32} />,
@@ -51,11 +46,34 @@ const BenefitsSection = () => {
           </p>
         </div>
 
+        {/* First row - 3 items */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {benefits.map((benefit, index) => (
+          {benefits.slice(0, 3).map((benefit, index) => (
             <div
               key={index}
               className="group p-8 rounded-2xl bg-card border border-border/50 hover:border-primary/30 hover:shadow-lg transition-all duration-300"
+            >
+              <div className="w-16 h-16 rounded-2xl bg-soft-green group-hover:bg-primary flex items-center justify-center text-primary group-hover:text-primary-foreground transition-colors duration-300 mb-6">
+                {benefit.icon}
+              </div>
+              
+              <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
+                {benefit.title}
+              </h3>
+              
+              <p className="text-muted-foreground">
+                {benefit.description}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* Second row - 2 items centered */}
+        <div className="flex justify-center gap-6 mt-6">
+          {benefits.slice(3, 5).map((benefit, index) => (
+            <div
+              key={index + 3}
+              className="group p-8 rounded-2xl bg-card border border-border/50 hover:border-primary/30 hover:shadow-lg transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
             >
               <div className="w-16 h-16 rounded-2xl bg-soft-green group-hover:bg-primary flex items-center justify-center text-primary group-hover:text-primary-foreground transition-colors duration-300 mb-6">
                 {benefit.icon}

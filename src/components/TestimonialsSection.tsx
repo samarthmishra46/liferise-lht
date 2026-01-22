@@ -56,11 +56,48 @@ const TestimonialsSection = () => {
           </p>
         </div>
 
+        {/* First row - 3 items */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {testimonials.map((testimonial, index) => (
+          {testimonials.slice(0, 3).map((testimonial, index) => (
             <div
               key={index}
-              className={`card-elevated p-6 ${index === 0 ? 'lg:col-span-1' : ''}`}
+              className="card-elevated p-6"
+            >
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} size={16} className="fill-coral text-coral" />
+                ))}
+              </div>
+              
+              <Quote size={24} className="text-primary/30 mb-3" />
+              
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                "{testimonial.text}"
+              </p>
+              
+              <div className="flex items-center gap-3 pt-4 border-t border-border">
+                <img
+                  src={testimonial.image}
+                  alt={testimonial.name}
+                  className="w-12 h-12 rounded-full object-cover"
+                />
+                <div>
+                  <p className="font-semibold text-foreground">
+                    {testimonial.name}, {testimonial.age}
+                  </p>
+                  <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Second row - 2 items centered */}
+        <div className="flex flex-col md:flex-row justify-center items-stretch gap-6 mt-6">
+          {testimonials.slice(3, 5).map((testimonial, index) => (
+            <div
+              key={index + 3}
+              className="card-elevated p-6 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-8px)] max-w-md"
             >
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (

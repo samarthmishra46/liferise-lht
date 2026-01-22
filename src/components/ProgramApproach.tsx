@@ -71,11 +71,39 @@ const ProgramApproach = () => {
           </p>
         </div>
 
+        {/* First row - 3 items */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {approaches.map((approach, index) => (
+          {approaches.slice(0, 3).map((approach, index) => (
             <div
               key={index}
-              className={`card-elevated p-8 ${index === 4 ? 'md:col-span-2 lg:col-span-1' : ''}`}
+              className="card-elevated p-8"
+            >
+              <div className="w-16 h-16 rounded-2xl bg-soft-green flex items-center justify-center text-primary mb-6">
+                {approach.icon}
+              </div>
+              
+              <h3 className="font-serif text-xl font-semibold text-foreground mb-4">
+                {approach.title}
+              </h3>
+              
+              <ul className="space-y-3">
+                {approach.items.map((item, itemIndex) => (
+                  <li key={itemIndex} className="flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 rounded-full bg-coral mt-2 flex-shrink-0" />
+                    <span className="text-muted-foreground">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        {/* Second row - 2 items centered */}
+        <div className="flex flex-col md:flex-row justify-center items-stretch gap-6 mt-6">
+          {approaches.slice(3, 5).map((approach, index) => (
+            <div
+              key={index + 3}
+              className="card-elevated p-8 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-8px)] max-w-md"
             >
               <div className="w-16 h-16 rounded-2xl bg-soft-green flex items-center justify-center text-primary mb-6">
                 {approach.icon}
