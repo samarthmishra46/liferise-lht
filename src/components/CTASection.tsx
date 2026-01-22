@@ -11,7 +11,7 @@ const CTASection = () => {
 
       <div className="container-custom relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
             Take the First Step Toward Hair Restoration
           </h2>
           
@@ -19,7 +19,7 @@ const CTASection = () => {
             Hair loss does not define you.
           </p>
           
-          <p className="text-2xl font-semibold text-foreground mb-10">
+          <p className="text-2xl font-semibold text-white mb-10">
             The right treatment can <span className="text-primary">transform confidence</span>.
           </p>
 
