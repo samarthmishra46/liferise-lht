@@ -75,7 +75,7 @@ const AboutSection = () => {
                   className="w-full rounded-2xl shadow-md"
                 />
                 <img
-                  src="https://images.unsplash.com/photo-1579154341406-6e4e185d7c85?w=400&h=400&fit=crop"
+                  src="https://media.istockphoto.com/id/2155224543/photo/dermatologist-examining-her-patients-scalp.webp?a=1&b=1&s=612x612&w=0&k=20&c=Jm1lIkGtR2juOODUbAhDoOubOV5GuonBRqnUM_3dZhs="
                   alt="Scalp examination"
                   className="w-full rounded-2xl shadow-md"
                 />
