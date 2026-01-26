@@ -77,13 +77,15 @@ const HeroSection = () => {
           {/* Hero Image */}
           <div className="order-1 lg:order-2 relative animate-fade-in">
             <div className="relative aspect-[4/5] max-w-md mx-auto lg:max-w-none">
-              <div className="absolute inset-0 bg-primary/10 rounded-3xl transform rotate-3" />
-              <div className="absolute inset-0 bg-primary/5 rounded-3xl transform -rotate-3" />
-              <img
-                src="https://images.unsplash.com/photo-1622296089863-eb7fc530daa8?w=600&h=750&fit=crop"
-                alt="Hair transplant procedure"
-                className="relative w-full h-full object-cover rounded-3xl shadow-lg"
-              />
+              
+              <video
+              src="https://res.cloudinary.com/dvxqb1wge/video/upload/v1769095471/Lifescc_Hair_Solution_S2_1_kucnln.mp4"
+              className="w-full h-full object-contain rounded-xl"
+              autoPlay
+              muted
+              loop
+              playsInline
+            />
               
               {/* Floating Card */}
               <div className="absolute -bottom-6 -left-6 bg-card p-4 rounded-2xl shadow-lg animate-float">

@@ -2,146 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Neulis Cursive Font Family */
-@font-face {
-  font-family: 'Neulis Cursive';
-  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Hairline.otf') format('opentype');
-  font-weight: 100;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: 'Neulis Cursive';
-  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Hairline_Italic.otf') format('opentype');
-  font-weight: 100;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Neulis Cursive';
-  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Thin.otf') format('opentype');
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Neulis Cursive';
-  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Thin_Italic.otf') format('opentype');
-  font-weight: 200;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Neulis Cursive';
-  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Extra_Light.otf') format('opentype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Neulis Cursive';
-  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Extra_Light_Italic.otf') format('opentype');
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Neulis Cursive';
-  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Light.otf') format('opentype');
-  font-weight: 350;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Neulis Cursive';
-  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Light_Italic.otf') format('opentype');
-  font-weight: 350;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Neulis Cursive';
-  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Regular.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Neulis Cursive';
-  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Italic.otf') format('opentype');
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Neulis Cursive';
-  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Medium.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Neulis Cursive';
-  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Medium_Italic.otf') format('opentype');
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Neulis Cursive';
-  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Semi_Bold.otf') format('opentype');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Neulis Cursive';
-  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Semi_Bold_Italic.otf') format('opentype');
-  font-weight: 600;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Neulis Cursive';
-  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Bold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Neulis Cursive';
-  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Bold_Italic.otf') format('opentype');
-  font-weight: 700;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Neulis Cursive';
-  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Extra_Bold.otf') format('opentype');
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Neulis Cursive';
-  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Extra_Bold_Italic.otf') format('opentype');
-  font-weight: 800;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Neulis Cursive';
-  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Black.otf') format('opentype');
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Neulis Cursive';
-  src: url('./assets/fonts/neulis/fonnts.com-Neulis_Cursive_Black_Italic.otf') format('opentype');
-  font-weight: 900;
-  font-style: italic;
-}
 
 @layer base {
   :root {
@@ -265,13 +126,11 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Neulis Cursive', 'Inter', sans-serif;
+      @apply bg-background text-foreground font-sans antialiased;
+      font-family: 'Montserrat', sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Neulis Cursive', 'Playfair Display', serif;
-  }
+    /* All elements will inherit Montserrat from body */
 }
 
 @layer components {
